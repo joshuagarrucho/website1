@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSHYX Product</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="header-left">
+            <a href="index.html">New Arrivals</a>
+            <a href="#">Essentials</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-center">
+            <h1>JOSHYX</h1>
+        </div>
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search items...">
+                <button>Search</button>
+            </div>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <main class="product-container">
+        <div class="product-image">
+            <img id="product-image" src="/img/Khaki Baggy Cargo Pants.png" alt="Product Image">
+        </div>
+
+        <div class="product-info">
+            <h1 class="product-title" id="product-title">Loading...</h1>
+            
+            <div class="price-container">
+                <span class="current-price" id="product-price">...</span>
+            </div>
+            
+            <p class="shipping-text">Shipping calculated at checkout.</p>
+
+            <div class="selector-section">
+                <p class="selector-label">Size</p>
+                <div class="size-buttons">
+                    <button class="size-btn active">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+            </div>
+
+            <div class="selector-section">
+                <p class="selector-label">Quantity</p>
+                <div class="quantity-wrapper">
+                    <button class="qty-btn" id="decrease">-</button>
+                    <input type="number" id="qty-input" value="1" min="1">
+                    <button class="qty-btn" id="increase">+</button>
+                </div>
+            </div>
+
+            <div class="product-actions">
+                <a href="#" class="btn-buy" id="buy-now-btn">Buy</a>
+                <button class="btn-cart">Add to cart</button>
+            </div>
+
+            <ul class="product-description" id="product-desc-list">
+                </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+</html>
